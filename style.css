@@ -1,8 +1,137 @@
-*{
-    margin:0;
-    padding: 0;
+@import url("https://cdn.web-fonts.ge/fonts/dejavu-sans/css/dejavu-sans.min.css");
+
+body{
+    font-family: "DejaVu Sans", sans-serif;
 }
-body,html{
+header{
     width: 100%;
-    height: 100%;
+}
+.header_main_content{
+    width: 60%;
+    margin: 0 auto;
+}
+header h1{
+    color: #24292d;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem auto 2rem;
+}
+header h2,header h3{
+    color: #5b6770;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.video_content{
+    width: 100%;
+    height:100%;
+}
+video{
+    width: 100%;
+    height:100%;
+}
+
+/*chooser section*/
+main{
+    margin: 7rem 0 0 0 ;
+}
+main section{
+    margin: 0 auto;
+}
+.each_person_video video::-webkit-media-controls {
+    display: none;
+}
+.chooser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.person_video{
+    width: 25%;
+    padding: 1%;
+    cursor: pointer;
+}
+.each_person_video{
+    width: 100%;
+}
+.chooser video{
+    width: 100%;
+    height: auto;
+}
+.name{
+    border-bottom: 1px solid #e37c83;
+    color: #373e43;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.chooser-instructions p {
+    color: #da5059;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: center;
+    opacity: 0;
+}
+.down-arrow {
+    display: block;
+    margin: 0 auto;
+    stroke: #da5059;
+    opacity: 0;
+    transform: translateY(-5px);
+}
+.person_video:hover
+.chooser-instructions p,
+.person_video:hover
+.down-arrow
+{
+    opacity: 1;
+}
+.person_video:hover
+.chooser-instructions p{
+    transition-delay: 0.2s;
+    transition: 2s;
+}
+.person_video:hover
+.down-arrow{
+    transform: translateY(5px);
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+.person_info{
+    width: 50%;
+}
+.person_header {
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+.person_header h2{
+    color: #da5059;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    margin: 5rem 0 1rem 0;
+}
+.person_header h2:before,
+.person_header h2:after {
+    color: #eda7ac;
+    content: '" ';
+}
+.person_header h3{
+    color: #5b6770;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.person_text{
+    color: #373e43;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.35;
+    margin: 2rem 0 1rem 0;
+    padding: 0 4%;
 }

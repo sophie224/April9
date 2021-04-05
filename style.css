@@ -6,16 +6,22 @@ body{
 header{
     width: 100%;
 }
+img{
+    width: 100%;
+}
+.baner_content{
+    width: 100%;
+}
 .header_main_content{
     width: 60%;
     margin: 0 auto;
 }
 header h1{
     color: #24292d;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin: 2rem auto 2rem;
+    margin: 7rem auto 2rem;
 }
 header h2,header h3{
     color: #5b6770;

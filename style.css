@@ -141,3 +141,10 @@ main section{
     margin: 2rem 0 1rem 0;
     padding: 0 4%;
 }
+
+
+.person_main_video video{
+width: 100%;
+height: auto;
+
+}

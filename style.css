@@ -2,6 +2,7 @@
 
 body{
     font-family: "DejaVu Sans", sans-serif;
+    position: relative;
 }
 header{
     width: 100%;
@@ -19,33 +20,47 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
-.baner_content  h5{
+figcaption{
     font-size: 1rem;
-    color: #4e4e4e;
-    transition: .2s;
+    margin-top: 1rem;
+    font-style: italic;
 }
-.baner_content  h5:hover{
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2;
+}
+aside h3{
+    font-size: 1.2rem;
+}
+aside h5{
+    font-size: 1rem;
+    color: red;
+}
+aside h5:after {
+    content: ' \2192';
+}
+aside h5:hover{
     color: #da5059;
 }
-.baner_content a{
-    border: .5px solid #c5c5c5;
-    border-radius: 5px;
-    padding: .5rem;
-    box-shadow: -3px -2px #ababab80;
+.title{
+    color: #da5059;
 }
-
 .header_main_content{
     width: 60%;
-    margin: 10rem auto;
+    margin: 0 auto;
 }
 header h1{
     color: #24292d;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin: 3rem auto 2rem;
+    margin:  auto 2rem;
+    padding: 2rem 0;
 }
 header h2,header h3{
     color: #5b6770;
@@ -180,7 +195,7 @@ video:focus{
 
 
 footer {
-    margin: 3% 0;
+    margin: 2% 0;
 }
 .authors-container {
     width: 100%;

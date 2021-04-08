@@ -31,14 +31,14 @@ aside{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     line-height: 2;
 }
 aside h3{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 aside h5{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: red;
 }
 aside h5:after {
@@ -56,7 +56,7 @@ aside h5:hover{
 }
 header h1{
     color: #24292d;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
     margin:  auto 2rem;

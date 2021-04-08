@@ -86,11 +86,23 @@ main section{
 .each_person_video video::-webkit-media-controls {
     display: none;
 }
+.instruction_container{
+    font-size: 1rem;
+    color: #5b6770;
+    font-style: italic;
+    padding-bottom: 4rem;
+}
 .chooser {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70%;
+    flex-direction: column;
+}
+.persons_common_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .person_video{
@@ -190,7 +202,7 @@ video:focus{
     padding: 0 4%;
 }
 .person_details{
-    padding: 3.5rem 0;
+    padding: 0.2rem 0;
 }
 
 
